@@ -6,14 +6,7 @@ import './App.css';
 
 class ImageItem extends Component {
   render() {
-    const model = new KerasJS.Model({
-      filepaths: {
-        model: 'url/path/to/model.json',
-        weights: 'url/path/to/model_weights.buf',
-        metadata: 'url/path/to/model_metadata.json'
-      },
-    gpu: false
-    })
+    
     const file = this.props.file
     return (
       <li key={file.name}>
